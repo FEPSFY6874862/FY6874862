@@ -168,8 +168,8 @@ function displayWordCount(sectionId, outputId) {
   }
  function displayTotalWordCount() {
 const IntroductionCount = displayWordCount("Introduction_InText");
-    const AnalysisCount = displayWordCount("Analysis_InText");
- const totalWordCount = IntroductionCount + AnalysisCount;
+    const AnalysisCount = displayWordCount("Analysis and discussion_InText");
+ const totalWordCount = IntroductionCount + Analysis and discussionCount;
  document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
  window.onload = displayTotalWordCount;
