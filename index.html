@@ -161,14 +161,15 @@ drinking water treatment Available at: https://doi.org/10.1016/j.jwpe.2023.10388
 <hr>
 <script>
 function displayWordCount(sectionId, outputId) {
- const text = document.getElementById(sectionId).textContent;
- const wordArray = text.trim().split(/\s+/);     
-   const wordCount = wordArray.length;
-    return wordCount;
+const text = document.getElementById(sectionId).textContent;
+const wordArray = text.trim().split(/\s+/);     
+  const wordCount = wordArray.length;
+    
+return wordCount;
   }
  function displayTotalWordCount() {
 const IntroductionCount = displayWordCount("Introduction_InText");
-    const AnalysisCount = displayWordCount("Analysis and discussion_InText");
+  const AnalysisCount = displayWordCount("Analysis and discussion_InText");
  const totalWordCount = IntroductionCount + Analysis and discussionCount;
  document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
