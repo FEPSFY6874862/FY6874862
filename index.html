@@ -26,7 +26,7 @@
       <td><a href="#Introduction">Introduction</td>
     </tr>
    <tr>
-      <td><a href="#Analysis and discussion">Analysis and discussion</td>
+      <td><a href="#Analysis">Analysis</td>
    </tr>
 
    <tr>
@@ -63,7 +63,7 @@
     </pre>
     </p>
 
-     <h3 id="Analysis and discussion">Analysis and discussion</h3>
+     <h3 id="Analysis">Analysis</h3>
     <p class="ex1">
     <pre>
       One method of removing the microplastics from water is by using coagulation mechanisms to remove them from the water, coagulation in water treatment is a chemical process in which certain compounds are added into the water which clump
@@ -169,8 +169,8 @@ return wordCount;
   }
  function displayTotalWordCount() {
 const IntroductionCount = displayWordCount("Introduction_InText");
-  const Analysis and discussionCount = displayWordCount("Analysis and discussion_InText");
- const totalWordCount = IntroductionCount + Analysis and discussionCount;
+  const AnalysisCount = displayWordCount("Analysis_InText");
+ const totalWordCount = IntroductionCount + AnalysisCount;
  document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
  window.onload = displayTotalWordCount;
