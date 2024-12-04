@@ -120,7 +120,7 @@ drinking water treatment Available at: https://doi.org/10.1016/j.jwpe.2023.10388
 </button>
 <script>
     async function getLastUpdatedTime() {
-        const username = 'nr0025';
+        const username = 'FEPSFY6874862';
         const repo = 'FY6874862';
        
         const url = `https://api.github.com/repos/${username}/${repo}/commits`;
@@ -157,12 +157,25 @@ drinking water treatment Available at: https://doi.org/10.1016/j.jwpe.2023.10388
     window.onload = getLastUpdatedTime;
 </script>
 
+<p id="totalWordCount"></p>
+<hr>
+<script>
+function displayWordCount(sectionId, outputId) {
+ const text = document.getElementById(sectionId).textContent;
+ const wordArray = text.trim().split(/\s+/);     
+   const wordCount = wordArray.length;
+    return wordCount;
+  }
+ function displayTotalWordCount() {
+const IntroductionCount = displayWordCount("Introduction_InText");
+    const AnalysisCount = displayWordCount("Analysis_InText");
+ const totalWordCount = IntroductionCount + AnalysisCount;
+ document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
+  }
+ window.onload = displayTotalWordCount;
+</script>
 
-
-
-      
   
-    
  </head>
 </html>
   </h2></h2>
